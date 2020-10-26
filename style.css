@@ -1,0 +1,60 @@
+.container{
+display: grid;
+grid-template-columns: repeat(300px,auto,auto,300px);
+grid-template-rows: auto;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+grid-template-areas:
+"iheader iheader iheader iheader"
+"h1 h1 h1 h1"
+" adv-image adv-text adv-text ."
+"ю select . ."
+"left-table-img table table right-table-img"
+". usefull-inf-1 usefull-inf-2 ."
+". form form ."
+}
+.header{
+	grid-area: top;
+justify-self: center;
+}
+.item-0 {
+grid-area: iheader;
+justify-self: center;
+}
+.item-1 {
+grid-area: h1;
+justify-self: center;}
+.item-2 {
+grid-area: adv-image;
+justify-self: right;}
+.item-3 {
+grid-area: adv-text;
+justify-self: left;}
+.item-4 {
+grid-area: left-table-img;
+justify-self: center;}
+.item-5 {
+grid-area: table;
+justify-self: center;}
+.item-6 {
+grid-area: right-table-img;
+justify-self: center;}
+.item-7 {
+grid-area: usefull-inf-1;
+justify-self: center;}
+.item-8 {
+grid-area: usefull-inf-2;
+justify-self: center;}
+.item-9 {
+grid-area: form;
+justify-self: center;}
+
+ul.header-menu {
+    margin: 0;
+    padding: 4px;
+   }
+   ul.header-menu li {
+    display: inline; 
+    margin-right: 5px;
+    padding: 3px;
+   }
