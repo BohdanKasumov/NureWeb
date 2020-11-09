@@ -29,6 +29,8 @@ grid-area: adv-image;
 justify-self: right;}
 .item-3 {
 grid-area: adv-text;
+overflow: auto;
+height:120px;
 justify-self: left;}
 .item-4 {
 grid-area: left-table-img;

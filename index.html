@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>lab2</title>
+    <title>lab3</title>
+	
+	<style>
+	h1 { 
+		font-size: 150%;
+		font-family: cursive;  
+		letter-spacing: 3px;
+	}
+	
+	h2 { 
+		font-size: 130%; 
+		font-family: Verdana, Arial, Helvetica, sans-serif;	
+		text-shadow: 2px 4px 5px black, -3px -6px 5px black;
+	}
+   
+	h3 { 
+		font-size: 110%;
+		font-family: "Gill Sans", sans-serif;
+	}
+  </style>
+	
     <meta charset="utf-8">
   	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="output.css">
   </head>
 
   <body>
     <div class="container">
 		<div class="item-0">
 			<ul class="header-menu">
-				<li><a href="#adv">Переваги</a></li>
-				<li><a href="#dep">Депозити</a></li>
-				<li><a href="#useful">Корисна інформація</a></li>
-				<li><a href="#submit">Оформити</a></li>
+				<li class="header_list_element"><a href="#adv">Переваги</a></li>
+				<li class="header_list_element"><a href="#dep">Депозити</a></li>
+				<li class="header_list_element"class="header_list_element"><a href="#useful">Корисна інформація</a></li>
+				<li class="header_list_element"><a href="#submit">Оформити</a></li>
 			</ul>
 		</div>
 		
@@ -30,10 +51,10 @@
 				Вкладник може отримати <i>надбавку</i> + 1% річних при оформленні нового вкладу від 250 000 грн.
 
 				<u>Надбавка надається за вкладами:</u>
-			<ul style="list-style-image: linear-gradient(#FF7A2F 0);">
-				<li>«Стандарт», «Джуніор» або послуги «Стандарт безподатковий»</li>
-				<li>в гривнях</li>
-				<li>від 3 до 12 місяців</li>
+			<ul>
+				<li class="li_image">«Стандарт», «Джуніор» або послуги «Стандарт безподатковий»</li>
+				<li class="li_image">в гривнях</li>
+				<li class="li_image">від 3 до 12 місяців</li>
 			</ul>
 		</div>
 		
@@ -51,7 +72,7 @@
 				<p><input type="submit" value="Отправить"></p>
 			</form>
 			
-			<table border="1" id="dep">
+			<table id="dep">
 				<tr>
 					<th>Назва </th>
 					<th>Поповнення </th>
@@ -100,16 +121,16 @@
 		<div class="item-7" id="useful">
 			<h3>Документи, істотні характеристики<h3>
 			<ol>
-				<li><a href="#">Стандарт</a></li>
-				<li><a href="#">Джуніор</a></li>
+				<li><a class="main_link" href="#" target="_blank">Стандарт</a></li>
+				<li><a class="main_link" href="#" target="_blank">Джуніор</a></li>
 			</ol>
 		</div>
 		
 		<div class="item-8">
 			<h3>Ставки, тарифи, листівки<h3>
 			<ul>
-				<li><a href="#">Архів ставок</a></li>
-				<li><a href="#">Інформаційний лист «Ставки за депозитами»</a></li>
+				<li><a class="main_link" href="#">Архів ставок</a></li>
+				<li><a class="main_link" href="#">Інформаційний лист «Ставки за депозитами»</a></li>
 			</ul>
 		</div>
 		
@@ -144,5 +165,9 @@
 				</form>
 		</div>
 	</div>
+	
+	<div class="footer">
+	 footer
+	<div>
   </body>
 </html>

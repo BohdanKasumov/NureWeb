@@ -1,0 +1,62 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #fff;
+  position: fixed;
+  max-width: 1200px;
+  margin: 0 auto;
+  align: center;
+}
+
+.header_list_element :hover {
+  color: white;
+  background-color: green;
+}
+
+p {
+  font-family: "Cabin", Helvetica, Arial, sans-serif;
+  color: #DEB887;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+
+.main_link {
+  color: green;
+  cursor: help;
+  visited: red;
+}
+.main_link :hover {
+  color: white;
+  background-color: green;
+}
+
+.li_image {
+  list-style-type: none;
+}
+.li_image:before {
+  content: "$";
+}
+
+ul {
+  padding: 0;
+  margin-left: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+  vertical-align: center;
+}
+td :hover, th :hover {
+  color: white;
+  background-color: green;
+}
+
+/*# sourceMappingURL=output.css.map */
