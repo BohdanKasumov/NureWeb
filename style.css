@@ -29,8 +29,6 @@ grid-area: adv-image;
 justify-self: right;}
 .item-3 {
 grid-area: adv-text;
-overflow: auto;
-height:120px;
 justify-self: left;}
 .item-4 {
 grid-area: left-table-img;
@@ -50,13 +48,3 @@ justify-self: center;}
 .item-9 {
 grid-area: form;
 justify-self: center;}
-
-ul.header-menu {
-    margin: 0;
-    padding: 4px;
-   }
-   ul.header-menu li {
-    display: inline; 
-    margin-right: 5px;
-    padding: 3px;
-   }

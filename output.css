@@ -11,7 +11,7 @@
   align: center;
 }
 
-.header_list_element :hover {
+.header_link:hover {
   color: white;
   background-color: green;
 }
@@ -26,9 +26,12 @@ p {
 .main_link {
   color: green;
   cursor: help;
-  visited: red;
+  text-decoration: none;
 }
-.main_link :hover {
+.main_link:visited {
+  color: red;
+}
+.main_link:hover {
   color: white;
   background-color: green;
 }
@@ -38,6 +41,10 @@ p {
 }
 .li_image:before {
   content: "$";
+}
+
+.image:hover {
+  cursor: pointer;
 }
 
 ul {
