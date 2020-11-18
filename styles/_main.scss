@@ -1,0 +1,91 @@
+@use "sass:map";
+
+@import "_variables1.scss";
+
+.container{
+max-width:1200px;
+margin: 0 auto;
+}
+
+.footer{
+  background: map.get($colors_map, 'footer_background_color');
+  position: fixed;
+  max-width:1200px;
+  margin: 0 auto;
+  align:center;
+  }
+  
+@mixin ms-back-ground-hover($bg-color,$hover-bg-color,$hover-color) {
+  background: $bg-color;
+  &:hover {
+    background-color:$hover-bg-color;
+	color:$hover-color;
+  }
+}
+  
+.header_link{@include ms-back-ground-hover(none,map.get($colors_map, 'primary_green_color'),white);
+}
+
+.main_link{
+	@extend .header_link;
+	color:green;
+	cursor:help;
+	text-decoration:none;
+	&:visited{
+		color:map.get($colors_map, used_link);
+	}
+}
+
+.btn{
+	@include ms-back-ground-hover(map.get($colors_map, 'primary_green_color'), green, white);
+	border:none;
+}
+
+p{
+	font-family: $content_font;
+	color: map.get($colors_map, 'content_color');
+	line-height: 18px;
+	word-wrap:break-word;
+}
+
+.li_image{
+	&:before{
+	content: $custom_li_image;
+	}
+	list-style-type:none;
+}
+
+.hover_cursour_pointer{
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+.image{
+	@extend .hover_cursour_pointer;
+}
+
+ul{
+	padding: 0;
+	margin-left: 20px;
+}
+
+table, th, td {
+  border: $table_border;
+  border-collapse: collapse;
+}
+
+td,th{
+	text-align: $table_align;
+	vertical-align: $table_align;
+	@extend .hover_cursour_pointer;
+	:hover {
+        color:white;
+		background-color:green;
+    }
+}
+
+
+
+
+
